@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #wrapper{
+        display: grid;
+        grid-template-columns: repeat(2);
+        grid-template-rows: repeat(3);
+    }
+
+    #header{
+        padding-left: 35px;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    #nav{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    
+    #flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    span{
+        margin-left:20px
+    }
+
+    #section{
+        grid-column: 1/1;
+        grid-row:3/4;
+    }
+
+    #aside{
+        grid-column: 2/2;
+        grid-row:3/4;
+    }
+
+    .copyright{
+        color:blue;
+    }
+
+    li{
+        list-style-type: none;
+        color:gray;
+    }
+
+    .search-container{
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .search-input{
+        border: none;
+        padding-left: 10px;
+        border-radius: 20px;
+        outline: none;
+    }
+
+    .search-button{
+        background-color: rgb(169, 169, 169);
+        border: none;
+        padding: 3px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>HTML5 Example</h1>
+            <p>한국기술교육직업전문학교</p>
+        </div>
+        
+        <div id="nav">
+            <hr>
+            <div id="flex">
+                <div>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+    
+                <div class="search-container">
+                    <input type="text" class="search-input">
+                    <button class="search-button">검색</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+        <div id="section">
+            <h2>HTML5 개요와 활동</h2>
+            <p>2018년 08월 21일</p>
+            <img src="grayBox.png">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem vel magnam ut placeat ab quibusdam temporibus in, deleniti distinctio saepe animi, assumenda, eligendi expedita illo modi tempora. Enim, rerum possimus.</p>
+        
+            <hr>
+            <h2>HTML5 응용과 실습</h2>
+            <p>2018년 08월 20일</p>
+            <img src="grayBox.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure repellat tempore aliquam odit laboriosam magni animi necessitatibus. Dicta, voluptatum quas? Quo perferendis mollitia laborum quae, cumque praesentium in. Officiis.</p>
+        
+            <hr>
+            <div class="copyright">
+                <p>Created By &copy; Team-koerate</p>
+            </div>
+        </div>
+        
+        <div id="aside">
+            <h4>카테고리</h4>
+            <ul>
+                <li>데이터</li>
+                <li>데이터</li>
+                <li>데이터</li>
+                <li>데이터</li>
+                <li>데이터</li>
+            </ul>
+        
+            <h4>최근 글</h4>
+            <ul>
+                <li>데이터</li>
+                <li>데이터</li>
+                <li>데이터</li>
+                <li>데이터</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

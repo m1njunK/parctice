@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>시멘틱 태그를 이용한 레이아웃 구성(고정형)</title>
+        <style>
+    *{margin: 10px; padding: 10px;}
+
+    div{
+        width:1000px;
+        padding: 15px;
+    }
+    header { 
+        border: solid 1px grey;
+        background-color: skyblue;
+        height:100px;
+        color:white;
+     }
+
+    nav{
+        border: solid 1px grey;
+        background-color: pink;
+        width:130px; height:600px;
+        float:left;
+        color:white;
+    }
+
+    li{
+        list-style-type: none;
+        text-align: center;
+        color: black;
+    }
+
+    aside { 
+        border: solid 1px grey;
+        background-color:pink;
+        color:white;
+        width: 130px; height: 600px; 
+        float:right;
+    }
+
+    main {
+        border: solid 1px grey; 
+        background-color: greenyellow;
+        width: 610px; height: 600px;
+        float: left;
+        color:white;
+    }
+
+    article{
+        border : solid 1px grey;
+        background-color: grey;
+        width: 450px;
+        height: 300px;
+        margin-top: 100px;
+        margin-left : auto;
+        margin-right: auto;
+        color:white;
+    }
+    footer {
+        border: solid 1px grey;
+        background-color: skyblue; color:white;
+        height: 100px;
+        clear:both;
+    }
+</style>
+    </head>
+    <body>
+        <div>
+            <header>header</header>
+            <nav>nav
+                <li>menu-1</li>
+                <li>menu-2</li>
+                <li>menu-3</li>
+            </nav>
+            <main>section
+                <article>
+                 article<br>
+                 <br>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam explicabo, debitis sequi quibusdam ipsum atque necessitatibus illum labore pariatur id tempora facere, cum laudantium exercitationem unde, ducimus laborum fugit voluptas.
+                 Sequi, quas rem ipsum, quod obcaecati facere alias libero enim quo iure magni magnam optio vitae corporis maiores voluptatibus nam. Ipsa magnam minus at sequi consequatur placeat iure optio eos.
+                 Magni incidunt iusto esse laudantium necessitatibus mollitia minima nihil fuga unde quaerat explicabo facere commodi facilis ipsa nostrum corporis enim quis quae, voluptates sequi natus, error eligendi. Ipsa, autem ad.
+                </article>
+            </main>
+            <aside>aside</aside>
+            <footer>footer</footer>
+        </div>
+    </body>
+</html>

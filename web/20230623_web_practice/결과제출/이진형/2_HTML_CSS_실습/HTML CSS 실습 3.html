@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #wrapper{
+        width: 900px;
+        display: grid;
+        grid-template-columns: repeat(3);
+        grid-template-rows: repeat(3);
+    }
+
+    .header{
+        background-color: aqua;
+        grid-column: 1/4;
+        height:100px;
+    }
+
+    .nav{
+        background-color: pink;
+        grid-column: 1/2;
+        height:600px;
+        width:150px;
+    }
+
+    .section{
+        background-color: greenyellow;
+        grid-column: 2/3;
+        width: 600px;
+    }
+
+    .aside{
+        background-color: pink;
+        grid-column: 3/4;
+        width:150px;
+    }
+
+    .footer{
+        background-color: aqua;
+        grid-column: 1/4;
+        height:80px;
+    }
+
+    li{
+        list-style-type: none;
+    }
+    li:hover{
+        color:white;
+    }
+    #article p{
+        background-color: gray;
+    }
+
+    #article{
+        margin: 50px 50px;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <div class="header" style="color:white">header</div>
+        <div class="nav">
+            <div style="color:white">nav</div>
+            <ul>
+                <li>menu-1</li>
+                <li>menu-2</li>
+                <li>menu-3</li>
+            </ul>
+        </div>
+        <div class="section" style="color:white">
+            section
+            <div id="article">
+                <p>article<br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas, optio a, nihil omnis tempora eos earum consequatur non adipisci repellendus expedita veniam doloremque. Amet maxime a dignissimos aliquam illo.</p>
+            </div>
+        </div>
+        <div class="aside" style="color:white">aside</div>
+        <div class="footer" style="color:white">footer</div>
+    </div>
+</body>
+</html>

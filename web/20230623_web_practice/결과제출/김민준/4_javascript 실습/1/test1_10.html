@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let line = prompt('라인갯수를 입력하세요');
+
+        if(!isNaN(line)){
+            for(let i = 1; i <= (line*2)-1; i++){
+                for(let j = 0; j < Math.abs(line-i); j++){
+                    document.write('&nbsp');
+                }
+
+                if(i <= line){
+                    for(let k = 0; k < (i*2)-1; k++){
+                        document.write('*');
+                    }
+                } else{
+                    let x = (line*2-i)*2-1
+                    for(let l = 0; l < x; l++){
+                        document.write('*');
+                    }
+                }
+                document.write('<br>');
+            }
+        } else{
+            alert('퉤');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>        
+        table{
+            width: 400px;
+        }
+        table, tr, td{
+            border: 1px solid black;
+        }
+        .phone{
+            width: 50px;
+        }
+    </style>
+    <title>회원가입</title>
+</head>
+<body>
+    <form>
+        <table>
+            <colgroup>
+                <col width="37%"/>
+                <col width="55%"/>
+                <col width="8%"/>
+            </colgroup>
+            <tr>
+                <td colspan="3" style="font-weight: bold; text-align: center;">회원가입</td>
+            </tr>
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="id"/></td>
+                <td><input type="button" value="중복검사" name="idChek"/></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="pw"/></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>비밀번호확인</td>
+                <td><input type="password" name="pwChek"/></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="3">주소</td>
+                <td><input type="text" name="zipCode" placeholder="우편번호"/></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="address1" placeholder="주소"/></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="address2" placeholder="상세주소"/></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td><input type="text" name="birth"/></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="name"/></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>전화번호</td>
+                <td><input class="phone" type="number" name="phone1"/>-<input class="phone" type="number" name="phone2"/>-<input class="phone" type="number" name="phone3"/></td>
+                <td style="text-align: center;"><input type="button" value="인증" name="btnAuth"/></td>
+            </tr>
+            <tr>
+                <td colspan="3"><button>회원가입</button> <button>회원정보수정</button></td>
+            </tr>
+        </table>
+    </form>
+    
+
+    
+</body>
+</html>

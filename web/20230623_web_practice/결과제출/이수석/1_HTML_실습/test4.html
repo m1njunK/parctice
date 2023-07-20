@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 50%;
+          max-width: 500px;
+        }
+        
+        th, td {
+          border: 1px solid black;
+          padding: 8px;
+        }
+      </style>      
+</head>
+<body>
+    <form>
+        <table>
+          <tr>
+            <th colspan="2">회원가입</th>
+          </tr>
+          <tr>
+            <td>이메일</td>
+            <td><input type="email" name="email"></td>
+          </tr>
+          <tr>
+            <td>이름</td>
+            <td><input type="text" name="name"></td>
+          </tr>
+          <tr>
+            <td>비밀번호</td>
+            <td><input type="password" name="password"></td>
+          </tr>
+          <tr>
+            <td>비밀번호 확인</td>
+            <td><input type="password" name="confirm_password"></td>
+          </tr>
+          <tr>
+            <td>성별</td>
+            <td>
+              <input type="radio" name="gender" value="남성" checked> 남성
+              <input type="radio" name="gender" value="여성"> 여성
+            </td>
+          </tr>
+          <tr>
+            <td>나이</td>
+            <td><input type="text" name="age" pattern="[0-9]*" inputmode="numeric" placeholder="숫자를 입력하세요"></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="제출">
+            </td>
+          </tr>
+        </table>
+      </form>
+</body>
+</html>

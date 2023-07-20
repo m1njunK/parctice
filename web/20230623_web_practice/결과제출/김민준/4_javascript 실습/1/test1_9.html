@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let width = prompt('가로길이를 입력하세요');
+
+        if(!isNaN(width)){
+            for(let i = 1; i <= (width*2)-1; i++){
+                if(i <= width){
+                    for(let j = 1; j <= i; j++){
+                        document.write('*');
+                    }
+                    document.write('<br>');
+                } else{
+                    let x = i - width;
+                    for(let k = 0; k < width-x; k++){
+                        document.write('*');
+                    }
+                    document.write('<br>');
+                }
+            }
+        } else{
+            alert('그만!');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #joinBox{
+            border: solid black 1px;
+            text-align: center;
+            width: 350px;
+        }
+        table{
+            margin: 0px;
+        }
+        td{
+            padding: 5px;
+            padding-right: 10px;
+        }
+        .text{
+            text-align: right;
+        }
+        button{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="joinBox">
+        <h1>회원가입</h1>
+        <table>
+            <tr>
+                <td class="text">아이디</td>
+                <td><input id="input1"></td>
+            </tr>
+            <tr>
+                <td class="text">비밀번호</td>
+                <td><input id="input2" type="password"></td>
+            </tr>
+            <tr>
+                <td class="text">비밀번호확인</td>
+                <td><input id="input3" type="password"></td>
+            </tr>
+            <tr>
+                <td class="text">생년월일</td>
+                <td><input id="input4"></td>
+            </tr>
+            <tr>
+                <td class="text">이름</td>
+                <td><input id="input5"></td>
+            </tr>
+            <tr>
+                <td class="text">전화번호</td>
+                <td><input id="input6"></td>
+            </tr>
+        </table>
+        <button onclick="join()">회원가입</button>
+        <button onclick="join()">정보수정</button>
+    </div>
+
+    <script>
+        function join(){
+            for(let i = 1; i < 7; i++){
+                let inputBox = 'input'+i;
+                let text = document.getElementById(inputBox).value;
+                if(text == ''){
+                    let error;
+                    switch(i){
+                        case 1:
+                            error = '아이디';
+                            break;
+                        case 2: case 3:
+                            error = '비밀번호';
+                            break;
+                        case 4:
+                            error = '생년월일';
+                            break;
+                        case 5:
+                            error = '이름';
+                            break;
+                        case 6:
+                            error = '전화번호';
+                             break;
+                    }
+                    alert(error+'를 작성해주세요');
+                    document.getElementById(inputBox).focus();
+                    return;
+                }
+            }
+            let pass = document.getElementById('input2').value;
+            let pass2 = document.getElementById('input3').value;
+
+            if(pass != pass2){
+                alert('비밀번호가 일치하지않습니다.');
+                document.getElementById('input2').value = '';
+                document.getElementById('input3').value = '';
+                document.getElementById('input2').focus();
+            }
+        }
+    </script>
+</body>
+</html>

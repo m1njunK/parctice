@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:hover 활용</title>
+    <style>
+        p:hover{
+            p.img{
+                display:none;
+            }
+        }
+        .back, .spade {
+            position: absolute;
+            width: 150px;
+            height: 200px;
+        }
+
+        .back:hover{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>:hover 활용</h2>
+    <hr>
+    <div>마우스를 올리면 카드의 앞면이 보인다
+        <img  src="spade.png" class="spade">
+        <img  src="back.png" class="back">
+    </div>
+
+    
+</body>
+</html>

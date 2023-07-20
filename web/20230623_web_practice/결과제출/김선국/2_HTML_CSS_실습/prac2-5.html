@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<HTML>
+ <HEAD>
+  <TITLE> FLEX </TITLE>
+  <META charset="utf-8">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#wrap{
+			width: 1000px; height: 710px;
+			border: 1px solid red;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: left;	
+								
+		}		
+		header h1{
+			width: 1000px;
+			height: 80px;			
+			text-align: center;
+			line-height: 90px;
+		}
+		#wrap #menus{
+			width: 1000px; height: 500px;
+			margin-top: 5px;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-content: flex-start;
+			
+		}
+		
+		#menu1{
+			background-image: url(실습자료/img/dish1.jpg);			
+			width: 300px; height: 250px;
+			flex-basis: 298px;
+			margin-bottom: 4px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border: 1px solid black;
+			flex-grow: 1;
+			
+		}
+		#menu2{
+			background-image: url(실습자료/img/dish2.jpg);
+			width: 300px; height: 250px;			
+			flex-basis: 298px;
+			margin-left: 4px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border: 1px solid black;
+			flex-grow: 1;
+		}
+		#menu3{
+			background-image: url(실습자료/img/dish3.jpg);
+			width: 300px; height:250px;
+			flex-basis: 298px;
+			margin-left: 4px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border: 1px solid black;
+			flex-grow: 1;
+		}
+		#menu4{
+			background-image: url(실습자료/img/dish4.jpg);
+			width: 300px; height: 250px;
+			flex-basis: 30%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border: 1px solid black;
+			flex-grow: 1;
+		}
+		#menu5{
+			background-image: url(실습자료/img/dish5.jpg);
+			width: 60%; height: 250px;
+			flex-basis: 60%;
+			margin-left: 5px;
+			margin-bottom: 5px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border: 1px solid black;
+			flex-grow: 1;
+		}
+		#wrap footer{
+			background-color: black;
+			width: 100%; height: 100px;
+			line-height: 100px;
+			
+			color: white;
+			text-align: center;
+			padding: auto;
+			font-size: 12px;
+			align-self: flex-end;
+		}
+	</style>	
+</HEAD>
+ <BODY>
+	<div id="wrap">
+		<header>
+			<h1>솔로의 식탁</h1>
+		</header>
+		<article>
+			<div id="menus">
+				<div id="menu1">					
+				</div>
+				<div id="menu2">					
+				</div>
+				<div id="menu3">					
+				</div>
+				<div id="menu4">					
+				</div>
+				<div id="menu5">					
+				</div>
+			</div>
+		</article>
+		<footer>
+			<p>솔로의 식탁</p>
+		</footer>
+	</div>
+ </BODY>
+</HTML>
+<script>
+</script>

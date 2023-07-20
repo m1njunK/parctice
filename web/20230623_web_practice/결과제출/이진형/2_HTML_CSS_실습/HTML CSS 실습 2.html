@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .visible1{
+        width: 130px;
+        position: relative;
+        margin: 0px auto;
+    }
+
+    .visible3{
+        position: absolute;
+        top:0px;
+        left:0px;
+        display: none;
+    }
+
+    .visible1:hover .visible3{
+        display: block;
+    }
+</style>
+<body>
+    <h1>:hover 활용</h1>
+    <hr>
+    <div style="display:table-row">
+        마우스를 올리면 카드의 앞면이 보인다.
+        <div class="visible1">
+            <img src="back.png" class="visible2">
+            <img src="front.png" class="visible3">
+        </div>
+    </div>
+</body>
+</html>

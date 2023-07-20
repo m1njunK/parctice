@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let length = prompt('행열의 길이를 입력하세요!');
+
+        if(!isNaN(length)){
+            for(let i = 0; i < length; i++){
+                for(let j = 0; j < length; j++){
+                    document.write('*');
+                }
+                document.write('<br/>');
+            }
+        } else {
+            alert('장난치면 안됩니다.');
+        }
+
+    </script>
+</body>
+</html>

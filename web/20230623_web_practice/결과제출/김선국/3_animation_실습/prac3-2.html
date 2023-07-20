@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        #ball1{
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            animation: ball 3s infinite, background 3s infinite;
+            border: solid 2px black;
+            
+        }
+        #ball2{
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin-left: 10px;
+            animation: ball 3s 0.1s infinite, background 3s infinite;
+            border: solid 2px black;
+        }
+        #ball3{
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin-left: 10px;
+            animation: ball 3s 0.2s infinite, background 3s infinite;
+            border: solid 2px black;
+        }
+        #ball4{
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin-left: 10px;
+            animation: ball 3s 0.3s infinite, background 3s infinite;
+            border: solid 2px black;
+        }
+        #ball5{
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin-left: 10px;
+            animation: ball 3s 0.4s infinite, background 3s infinite;
+            border: solid 2px black;
+        }
+        @keyframes ball {
+            from{transform: translateY(0);}
+            30%{transform: translateY(300px);}
+            40%{transform: translateY(250px);}
+            50%{transform: translateY(300px);}
+            to{transform: translateY(0);}
+        }
+        @keyframes background{
+            from{background-color: rgba(135, 207, 235, 0.3);}
+            50%{background-color: skyblue;}
+            to{background-color: rgba(135, 207, 235, 0.3);}
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="ball1"></div>
+        <div id="ball2"></div>
+        <div id="ball3"></div>
+        <div id="ball4"></div>
+        <div id="ball5"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1부터 100까지의 랜덤한 숫자 생성
+        const random = Math.floor(Math.random() * 100) + 1;
+        let point = 0;
+
+        while (true) {
+        // 사용자로부터 숫자 입력 받기
+        const input = prompt("숫자를 입력하세요:");
+
+        // 입력받은 숫자의 범위
+        if (isNaN(input) || input < 1 || input > 100) {
+            alert("1부터 100까지의 유효한 숫자를 입력하세요.");
+            continue;
+        }
+
+        // 입력받은 값을 정수로 변환
+        const number = parseInt(input);
+
+        // 입력횟수
+        point++;
+
+        if (number > random) {
+            alert(`높습니다. 추측횟수 : ${point}`);
+        } else if (number < random) {
+            alert(`낮습니다. 추측횟수 : ${point}`);
+        } else {
+            alert(`성공입니다. 추측횟수 : ${point}`);
+            break;
+        }
+        }
+
+
+    </script>
+</body>
+</html>

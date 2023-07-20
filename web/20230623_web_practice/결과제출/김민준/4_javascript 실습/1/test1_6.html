@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = prompt('결과를 원하는 정수를 입력하세요!');
+        let result = 1;
+
+        if(!isNaN(num)){
+            for(let i = num; i > 0; i--){
+                result *= i;
+            }
+            document.write(`${num}! 의 값은 : ${result}`);
+        } else {
+            document.write('정수만 입력하라 했잖아!');
+        }
+    </script>
+</body>
+</html>

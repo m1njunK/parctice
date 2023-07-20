@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container{
+            width: 600px;
+            height: 200px;
+        }
+        #textBox {
+            width: 50%;            
+            height: 200px;           
+            float: left;
+            line-height: 200px;
+        }
+        #imgBox {       
+            width: 50%;     
+            height: 200px;
+            float: left;
+            background-image: url("실습자료/img/back.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+        }        
+        #imgBox:hover {                        
+            background-image: url("실습자료/img/spade.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <title>:hover 활용</title>
+</head>
+<body>
+    <h1>:hover 활용</h1>
+    <hr>
+    <div id="container">
+        <div id="textBox">마우스를 올리면 카드의 앞면이 보인다.</div>
+        <div id="imgBox"></div>
+    </div>
+    
+    
+</body>
+</html>

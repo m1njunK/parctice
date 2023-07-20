@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let random = Math.floor((Math.random()*101));
+        console.log(random);
+        let count = 0;
+        let num = 0;
+
+        while(random != num){
+            count++;
+            num = prompt('1~100까지의 정수를 입력해주세요.');
+            if(random > num){
+                alert(`낮습니다. 추측횟수 : ${count}`);
+            }else if(random < num){
+                alert(`높습니다. 추측횟수 : ${count}`);
+            }
+        }   
+
+        alert(`성공입니다. 추측횟수 : ${count}`);
+    </script>
+</body>
+</html>

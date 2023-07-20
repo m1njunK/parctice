@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card {
+      width: 200px;
+      height: 300px;
+      background-color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+      position: relative;
+    }
+
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s;
+      transform-style: preserve-3d;
+      transform: rotateY(180deg);
+    }
+
+    .card:hover .card-inner {
+      transform: rotateY(0deg);
+    }
+
+    .card-front, .card-back {
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      position: absolute;
+    }
+
+    .card-front {
+      background-image: url(./spade.png);
+      background-size: cover;
+    }
+
+    .card-back {
+      background-image: url(./back.png);
+      background-size: cover;
+      transform: rotateY(180deg);
+    }
+
+    .card-inner {
+      display: flex;
+    }
+
+    .text-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text-container p {
+      margin: 0;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>:hover 활용</h1>
+  <hr>
+  <div class="card">
+    <div class="card-inner">
+      <div class="text-container">
+      </div>
+      <div class="card-front"></div>
+      <div class="card-back"></div>
+    </div>
+  </div>
+</body>
+</html>

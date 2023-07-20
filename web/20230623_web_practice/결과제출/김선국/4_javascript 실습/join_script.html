@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table{
+            border: 1px solid black;
+            
+        }
+        table td{
+            padding: 12px;
+        }
+        table #title{
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+        }
+        table td{
+            text-align: right;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return joinChk()">
+        <table>
+            <colgroup>
+                <col width="40%" />
+                <col width="60%"/>
+            </colgroup>
+            <tr>
+                <td colspan="2" id="title">회원가입</td>
+            </tr>
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="id" id="id"/></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="pw" id="pw"/></td>
+            </tr>
+            <tr>
+                <td>비밀번호확인</td>
+                <td><input type="password" name="pwChek" id="pwChek"/></td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td><input type="text" name="birth" id="birth"/></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="name" id="name"/></td>
+            </tr>
+            <tr>
+                <td>전화번호</td>
+                <td><input type="text" name="phone" id="phone"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><input type="submit" id="btnJoin" value="회원가입"/> <button>정보수정</button></td>
+            </tr>
+        </table>    
+    </form>
+
+    <script>
+        function joinChk(){
+            let id = document.querySelector("#id");
+            let pw = document.querySelector("#pw");
+            let pwChek = document.querySelector("#pwChek");
+            let birth = document.querySelector("#birth");
+            let name = document.querySelector("#name");
+            let phone = document.querySelector("#phone");
+
+            if(id.value.trim() == ""){
+                alert("아이디를 작성해주세요.");
+                id.focus();
+                return false;
+
+            }else if(pw.value.trim() == ""){
+                alert("비밀번호를 작성해주세요.");
+                pw.focus();
+                return false;
+
+            }else if(pwChek.value.trim() == ""){
+                alert("비밀번호확인을 작성해주세요.");
+                pwChek.focus();
+                return false;
+
+            }else if(pw.value != pwChek.value){
+                pw.value = null;
+                pwChek.value = null;
+                alert("비밀번호가 일치하지않습니다.");                
+                pw.focus();
+                return false;
+
+            }else if(birth.value.trim() == ""){
+                alert("생년월일을 작성해주세요.");
+                birth.focus();
+                return false;
+
+            }else if(name.value.trim() == ""){
+                alert("이름을 작성해주세요.");
+                name.focus();
+                return false;
+
+            }else if(phone.value.trim() == ""){
+                alert("전화번호를 작성해주세요.");
+                phone.focus();
+                return false;
+
+            }else{
+                return true;
+            }            
+        }
+        
+    </script>
+</body>
+</html>
